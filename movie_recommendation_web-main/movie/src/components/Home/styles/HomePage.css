@@ -1,0 +1,66 @@
+.homepage {
+  font-family: 'Arial', sans-serif;
+  background-image:-moz-repeating-linear-gradient(black,rgb(206, 205, 205));
+}
+
+.header {
+  text-align: center;
+  background-image: linear-gradient(black,rgb(197, 190, 190)); /* Use Netflix-like background */
+  background-size: cover;
+  padding: 20px;
+  color: white;
+}
+
+.header input {
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1em;
+}
+.div-rec{
+  padding: 1rem;
+  border-radius: 4%;
+  text-align: center;
+  background-color: black;
+  color:rgb(255, 153, 0);
+  margin:1.1rem;
+  box-shadow: 0px 10px 90px  rgb(226, 158, 10);
+}
+
+.movies-list {
+  background: linear-gradient(to right,black,white);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.movie-details h2 {
+  margin: 10px 0;
+}
+
+.movie-details p {
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .header input {
+    width: 90%;
+  }
+}
